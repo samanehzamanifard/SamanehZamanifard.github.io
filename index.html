@@ -1,73 +1,519 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Samaneh Zamanifard</title>
-<meta name="description" content="Samaneh Zamanifard, Ph.D. — Postdoctoral Research Associate at the AI4STEM Education Center, University of Georgia. Research on AI-supported learning, personalized LLMs, and immersive systems.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samaneh Zamanifard, Ph.D.</title>
+  <meta name="description" content="Samaneh Zamanifard is a postdoctoral research associate at the AI4STEM Education Center, University of Georgia, studying how AI systems can strengthen human reasoning and independent learning.">
+  <meta name="color-scheme" content="light">
+  <link rel="canonical" href="https://samanehzamanifard.github.io/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Samaneh Zamanifard, Ph.D.">
+  <meta property="og:description" content="Postdoctoral researcher at UGA's AI4STEM Education Center studying how AI can strengthen human reasoning and learning.">
+  <meta property="og:url" content="https://samanehzamanifard.github.io/">
+  <meta property="og:image" content="https://samanehzamanifard.github.io/portrait.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- Icon sprite (Lucide geometry, ISC license) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="i-board" viewBox="0 0 24 24"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol>
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+</svg>
 
-<nav>
-  <div class="inner">
-    <a class="brand" href="index.html">Samaneh Zamanifard</a>
-    <a class="active" href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="research.html">Research</a>
-    <a href="experience.html">Experience</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav class="nav" aria-label="Sections">
+  <div class="wrap">
+    <a class="brand" href="#top">Samaneh Zamanifard</a>
+    <ul>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#honors">Honors</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
-<main>
-
-  <section class="intro" id="about">
-    <!-- Add your headshot to the repository as photo.jpg and it appears here automatically.
-         It is cropped to a circle, so a photo with your face centered looks best. Until then, your initials are shown. -->
-    <div class="intro-photo">
-      <div class="initials" aria-hidden="true">SZ</div>
-      <img src="photo.jpg" alt="Samaneh Zamanifard" onerror="this.remove()">
-    </div>
+<main id="main" class="wrap">
+  <header class="hero" id="top">
     <div>
-      <h1>Samaneh Zamanifard, Ph.D.</h1>
-      <p class="role">Postdoctoral Research Associate<br>AI4STEM Education Center, University of Georgia</p>
-      <div class="icon-links">
-        <a href="mailto:samaneh.zamanifard@gmail.com" aria-label="Email" title="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        </a>
-        <!-- Replace YOUR-LINKEDIN-ID with the part after linkedin.com/in/ in your profile link -->
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://scholar.google.com/citations?user=296TdqIAAAAJ" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
-        </a>
-        <!-- Uncomment once you add your resume PDF to the repository as cv.pdf -->
-        <!-- <a href="cv.pdf" target="_blank" rel="noopener" aria-label="CV (PDF)" title="CV (PDF)">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8"/></svg>
-        </a> -->
+      <p class="status"><span class="status-dot" aria-hidden="true"></span>Seeking faculty positions</p>
+      <h1>Samaneh Zamanifard<span class="suffix">, Ph.D.</span></h1>
+      <p class="hero-role"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Postdoctoral Research Associate, AI4STEM Education Center, University of Georgia</p>
+      <p class="hero-lead">I design and study AI that strengthens human reasoning and independent learning, combining eye tracking, learner modeling, and analysis of how language models reason.</p>
+      <ul class="actions">
+        <li><a class="btn btn-primary" href="cv.pdf"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV</a></li>
+        <li><a class="btn" href="mailto:samaneh.zamanifard@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Email</a></li>
+        <li><a class="btn" href="https://scholar.google.com/citations?user=296TdqIAAAAJ"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg>Google Scholar</a></li>
+      </ul>
+    </div>
+
+    <figure class="stimulus">
+      <div class="photo">
+        <img src="portrait.jpg" alt="Portrait of Samaneh Zamanifard" width="720" height="720">
+        <canvas aria-hidden="true"></canvas>
       </div>
-      <p>My research examines how the design of AI-supported and immersive systems shapes learning, attention, and social interaction. I develop and evaluate interactive systems using qualitative research, quantitative modeling, and eye-tracking methods.</p>
-      <p>My current work focuses on LLM-supported learning and learner modeling, building on research in social virtual reality, privacy, and embodied interaction. I earned my Ph.D. in Human-Centered Computing from Clemson University. I received the <a href="https://research.facebook.com/fellows/zamanifard-samaneh/" target="_blank" rel="noopener"><strong>Meta Research PhD Fellowship</strong></a> <strong>(2020–2022)</strong>.</p>
+      <figcaption><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg><span class="hint-pointer">Hover my photo to see a live gaze heatmap</span><span class="hint-touch">Drag across my photo for a gaze heatmap</span></figcaption>
+    </figure>
+  </header>
+
+  <ul class="highlights" aria-label="Highlights">
+    <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span><div><strong>Meta Research PhD Fellow</strong><span>2020 to 2022</span></div></li>
+    <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><div><strong>20 papers and preprints</strong><span>CHI, CSCW, ETRA, VRST, IEEE VR</span></div></li>
+    <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span><div><strong>1,317-student study</strong><span>LLMs in real learning settings</span></div></li>
+    <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span><div><strong>Ph.D., Human-Centered Computing</strong><span>Clemson University, 2026</span></div></li>
+  </ul>
+
+  <section class="section" id="research" aria-labelledby="research-h">
+    <div class="section-head">
+      <h2 id="research-h">Research agenda</h2>
+      <p>Two lines of work, one on people and one on models, that meet in reasoning-aware AI tutors.</p>
+    </div>
+    <div class="agenda">
+      <article>
+        <span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg></span>
+        <h3>How learners engage with AI explanations</h3>
+        <p>Eye tracking and pupillometry show how personalized explanations change where learners look, without longer viewing time.</p>
+      </article>
+      <article>
+        <span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+        <h3>How language models organize reasoning</h3>
+        <p>Across 30,400 solutions from eight models, internal activations cluster by reasoning approach rather than topic.</p>
+      </article>
+      <article>
+        <span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-bulb"/></svg></span>
+        <h3>Reasoning-aware AI tutors</h3>
+        <p>Tutors that adapt guidance to a learner's evolving understanding, built on the two lines of work beside it.</p>
+        <p class="joins">Tiger AI, Untwist, GENIUS, EngageAgent</p>
+      </article>
     </div>
   </section>
 
-  <section id="interests">
-    <h2>Research Interests</h2>
-    <ul class="tags" style="margin-top:0">
-      <li>Artificial Intelligence in Learning</li>
-      <li>Personalized LLMs</li>
-      <li>Immersive &amp; Mixed Reality Training</li>
-      <li>Human-Centered Computing</li>
+  <section class="section" id="projects" aria-labelledby="projects-h">
+    <div class="section-head">
+      <h2 id="projects-h">Projects</h2>
+      <p>Systems I've built and studies I've led.</p>
+    </div>
+    <div class="projects">
+      <article class="project">
+        <h3>LLM reasoning and mathematical transfer</h3>
+        <p class="meta">Research co-lead, 2025 to present</p>
+        <p class="sum">Approach-matched fine-tuning beat topic-matched training across 40 comparisons in eight open-weight models.</p>
+      </article>
+      <article class="project">
+        <h3>Tiger AI: personalized learning with LLMs</h3>
+        <p class="meta">Lead researcher, Clemson University, 2024 to present</p>
+        <p class="sum">A research platform running learning experiments across GPT-4o, LLaMA 3, and Gemini, used in a study with 1,317 students.</p>
+        <a class="more" href="https://tigerai.computing.clemson.edu/aboutme">Visit Tiger AI<svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a>
+      </article>
+      <article class="project">
+        <h3>Visual attention in personalized explanations</h3>
+        <p class="meta">Clemson University, 2025 to 2026</p>
+        <p class="sum">A within-subject eye tracking and pupillometry study comparing profile-conditioned and generic LLM explanations.</p>
+      </article>
+      <article class="project">
+        <h3>LLM adoption in higher education</h3>
+        <p class="meta">Lead researcher, Clemson University, 2024</p>
+        <p class="sum">Factor analysis and structural equation modeling of 900 undergraduates' perceived benefits of LLMs and reliance on them.</p>
+      </article>
+      <article class="project">
+        <h3>Untwist: interactive video learning</h3>
+        <p class="meta">Researcher, 2024 to present</p>
+        <p class="sum">Learners select a region of a video frame and get a context-aware answer from GPT-4o and computer vision.</p>
+      </article>
+      <article class="project">
+        <h3>Attention in immersive environments</h3>
+        <p class="meta">Clemson University, 2023 to 2025</p>
+        <p class="sum">A VR learning platform with eye tracking and physiological sensing to study how virtual humans' gender and race relate to gaze.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="publications" aria-labelledby="pubs-h">
+    <div class="section-head">
+      <h2 id="pubs-h">Publications</h2>
+      <p>Selected work. The full list is below and on <a href="https://scholar.google.com/citations?user=296TdqIAAAAJ">Google Scholar</a>.</p>
+    </div>
+    <ol class="pubs">
+      <li class="pub"><span class="title">Perceptions of large language models among predominantly STEM undergraduate students in higher education</span>
+        <span class="authors"><b>Zamanifard, S.</b>, Goudarzi, S., Soleimani, M., &amp; Robb, A. (2026)</span>
+        <span class="venue"><i>Discover Education</i></span>
+        <a class="doi" href="https://doi.org/10.1007/s44217-026-01991-z"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>DOI</a></li>
+      <li class="pub"><span class="title">Bias and Reliability in Learning-Style Inference from Student–AI Dialogues: An Evaluation of GPT-4o and Gemini 2.0 Flash</span>
+        <span class="authors"><b>Zamanifard, S.</b>, Goudarzi, S., &amp; Robb, A. (2026)</span>
+        <span class="venue">Under review, preprint</span>
+        <a class="doi" href="https://doi.org/10.48550/arXiv.2610.27448"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>arXiv</a></li>
+      <li class="pub"><span class="title">Mathematical Transfer in LLMs Follows Reasoning Approach More Than Topic</span>
+        <span class="authors">Goudarzi, S., <b>Zamanifard, S.</b>, Haeri, S. A. S., Nasiri, M., &amp; Rahimian, H. (2026)</span>
+        <span class="venue">Under review, preprint</span>
+        <a class="doi" href="https://arxiv.org/abs/2610.00331"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>arXiv</a></li>
+      <li class="pub"><span class="title">Evaluating Demographic Bias of Virtual Humans With Gaze: Race and Sex Concordance</span>
+        <span class="authors">Diaz, D., <b>Zamanifard, S.</b>, Volonte, M., &amp; Duchowski, A. T. (2025)</span>
+        <span class="venue"><i>Proceedings of the ACM on Human-Computer Interaction</i> (ETRA)</span>
+        <a class="doi" href="https://doi.org/10.1145/3725834"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>DOI</a></li>
+      <li class="pub"><span class="title">Towards Leveraging AI-based Moderation to Address Emergent Harassment in Social Virtual Reality</span>
+        <span class="authors">Schulenberg, K., Li, L., Freeman, G., <b>Zamanifard, S.</b>, &amp; McNeese, N. J. (2023)</span>
+        <span class="venue"><i>CHI ’23</i></span>
+        <a class="doi" href="https://doi.org/10.1145/3544548.3581090"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>DOI</a></li>
+      <li class="pub"><span class="title">Disturbing the Peace: Experiencing and Mitigating Emerging Harassment in Social Virtual Reality</span>
+        <span class="authors">Freeman, G., <b>Zamanifard, S.</b>, Maloney, D., &amp; Acena, D. (2022)</span>
+        <span class="venue"><i>Proceedings of the ACM on Human-Computer Interaction</i> (CSCW)</span>
+        <a class="doi" href="https://doi.org/10.1145/3512932"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>DOI</a></li>
+    </ol>
+
+    <details class="all-pubs">
+      <summary>Show all 20 publications<svg class="icon" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+        <div class="pub-year">
+          <h3>2027</h3>
+          <ol>
+            <li class="pub" data-kind="short"><span class="title">Re-streamed Validation of Real-Time Cognitive Load Measurement</span>
+              <span class="authors">Duchowski, A. T., <b>Zamanifard, S.</b>, Cecchetti, S., Cavallo, M., &amp; Edmonds, A.</span>
+              <span class="venue"><i>Pattern Recognition. ICPR 2026 International Workshops</i>, Part II, LNCS 17111, 557–571. Springer.</span><span class="kind">Workshop</span>
+              <a class="doi" href="https://doi.org/10.1007/978-3-032-39382-1_42">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2026</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">Perceptions of large language models among predominantly STEM undergraduate students in higher education</span>
+              <span class="authors"><b>Zamanifard, S.</b>, Goudarzi, S., Soleimani, M., &amp; Robb, A.</span>
+              <span class="venue"><i>Discover Education</i>. Advance online publication.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.1007/s44217-026-01991-z">DOI</a></li>
+            <li class="pub" data-kind="preprint"><span class="title">Bias and Reliability in Learning-Style Inference from Student–AI Dialogues: An Evaluation of GPT-4o and Gemini 2.0 Flash</span>
+              <span class="authors"><b>Zamanifard, S.</b>, Goudarzi, S., &amp; Robb, A.</span>
+              <span class="venue">Manuscript under review.</span><span class="kind">Preprint</span>
+              <a class="doi" href="https://doi.org/10.48550/arXiv.2610.27448">arXiv</a></li>
+            <li class="pub" data-kind="preprint"><span class="title">Mathematical Transfer in LLMs Follows Reasoning Approach More Than Topic</span>
+              <span class="authors">Goudarzi, S., <b>Zamanifard, S.</b>, Haeri, S. A. S., Nasiri, M., &amp; Rahimian, H.</span>
+              <span class="venue">Manuscript under review.</span><span class="kind">Preprint</span>
+              <a class="doi" href="https://arxiv.org/abs/2610.00331">arXiv</a></li>
+            <li class="pub" data-kind="preprint"><span class="title">Math Reasoning in LLMs is Organized by Approach, Not Topic</span>
+              <span class="authors">Goudarzi, S., <b>Zamanifard, S.</b>, Nasiri, M., &amp; Rahimian, H.</span>
+              <span class="venue">Preprint.</span><span class="kind">Preprint</span>
+              <a class="doi" href="https://arxiv.org/abs/2609.27041">arXiv</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2025</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">Path Modeling of Visual Attention, User Perceptions, and Behavior Change Intentions in Conversations With Embodied Agents in VR</span>
+              <span class="authors">Vankit, S. A., Genaro Motti, V., Do, T. D., <b>Zamanifard, S.</b>, Diaz, D., Duchowski, A. T., Knijnenburg, B. P., &amp; Volonte, M.</span>
+              <span class="venue"><i>Computer Animation and Virtual Worlds</i>, 36(3), e70028.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.1002/cav.70028">DOI</a></li>
+            <li class="pub" data-kind="paper"><span class="title">Exploring the Impact of Multimodal Long Conversations in VR on Attitudes Toward Behavior Change, Memory Retention, and Cognitive Load</span>
+              <span class="authors">Vankit, S. A., <b>Zamanifard, S.</b>, Diaz, D., Mousas, C., Richardson, K., Duchowski, A. T., &amp; Volonte, M.</span>
+              <span class="venue"><i>Computer Animation and Virtual Worlds</i>, 36(3), e70023.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.1002/cav.70023">DOI</a></li>
+            <li class="pub" data-kind="paper"><span class="title">Evaluating Demographic Bias of Virtual Humans With Gaze: Race and Sex Concordance</span>
+              <span class="authors">Diaz, D., <b>Zamanifard, S.</b>, Volonte, M., &amp; Duchowski, A. T.</span>
+              <span class="venue"><i>Proceedings of the ACM on Human-Computer Interaction</i>, 9(3), 1–17. ETRA full paper.</span><span class="kind">Conference</span>
+              <a class="doi" href="https://doi.org/10.1145/3725834">DOI</a></li>
+            <li class="pub" data-kind="short"><span class="title">Toward Standardization of Colliders for Statistical Comparison of Gaze on Virtual Humans</span>
+              <span class="authors">Diaz, D., <b>Zamanifard, S.</b>, Volonte, M., &amp; Duchowski, A. T.</span>
+              <span class="venue"><i>ETRA ’25</i>, Article 102, 1–5. Eyes4Access workshop.</span><span class="kind">Workshop</span>
+              <a class="doi" href="https://doi.org/10.1145/3715669.3726849">DOI</a></li>
+            <li class="pub" data-kind="preprint"><span class="title">Beyond Play and Pause: Turning GPT-4o Spatial Weakness into a Strength for In-Depth Interactive Video Learning</span>
+              <span class="authors">Goudarzi, S., &amp; <b>Zamanifard, S.</b></span>
+              <span class="venue">Preprint.</span><span class="kind">Preprint</span>
+              <a class="doi" href="https://arxiv.org/abs/2508.17160">arXiv</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2024</h3>
+          <ol>
+            <li class="pub" data-kind="short"><span class="title">Initial Investigations into Information Retention and Perception on Virtual Human Race</span>
+              <span class="authors">Diaz, D., <b>Zamanifard, S.</b>, Duchowski, A. T., &amp; Volonte, M.</span>
+              <span class="venue"><i>IEEE VR 2024 Abstracts and Workshops (VRW)</i>, 1078–1079.</span><span class="kind">Poster</span>
+              <a class="doi" href="https://doi.org/10.1109/VRW62533.2024.00335">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2023</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">Towards Leveraging AI-based Moderation to Address Emergent Harassment in Social Virtual Reality</span>
+              <span class="authors">Schulenberg, K., Li, L., Freeman, G., <b>Zamanifard, S.</b>, &amp; McNeese, N. J.</span>
+              <span class="venue"><i>CHI ’23</i>, Article 514, 1–17.</span><span class="kind">Conference</span>
+              <a class="doi" href="https://doi.org/10.1145/3544548.3581090">DOI</a></li>
+            <li class="pub" data-kind="paper"><span class="title">A Surprise Birthday Party in VR: Leveraging Social Virtual Reality to Maintain Existing Close Ties over Distance</span>
+              <span class="authors"><b>Zamanifard, S.</b>, &amp; Freeman, G.</span>
+              <span class="venue"><i>iConference 2023</i>, LNCS 13972, 268–285. Springer.</span><span class="kind">Conference</span>
+              <a class="doi" href="https://doi.org/10.1007/978-3-031-28032-0_23">DOI</a></li>
+            <li class="pub" data-kind="short"><span class="title">Social Virtual Reality Is My Therapist: Overcoming Social Anxiety Disorder Through Using Social Virtual Reality</span>
+              <span class="authors"><b>Zamanifard, S.</b>, &amp; Robb, A.</span>
+              <span class="venue"><i>CHI EA ’23</i>, Article 252, 1–6.</span><span class="kind">Extended abstract</span>
+              <a class="doi" href="https://doi.org/10.1145/3544549.3585888">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2022</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">Disturbing the Peace: Experiencing and Mitigating Emerging Harassment in Social Virtual Reality</span>
+              <span class="authors">Freeman, G., <b>Zamanifard, S.</b>, Maloney, D., &amp; Acena, D.</span>
+              <span class="venue"><i>Proceedings of the ACM on Human-Computer Interaction</i>, 6(CSCW1), Article 85, 1–30.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.1145/3512932">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2020</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">Anonymity vs. Familiarity: Self-Disclosure and Privacy in Social Virtual Reality</span>
+              <span class="authors">Maloney, D., <b>Zamanifard, S.</b>, &amp; Freeman, G. Equal contribution.</span>
+              <span class="venue"><i>VRST ’20</i>, Article 25, 1–9.</span><span class="kind">Conference</span>
+              <a class="doi" href="https://doi.org/10.1145/3385956.3418967">DOI</a></li>
+            <li class="pub" data-kind="paper"><span class="title">An empirical study on effective factors on adoption of cloud computing in electronic banking: a case study of Iran banking sector</span>
+              <span class="authors">Alizadeh, A., Chehrehpak, M., Nasr, A. K., &amp; <b>Zamanifard, S.</b></span>
+              <span class="venue"><i>International Journal of Business Information Systems</i>, 33(3), 408–428.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.1504/IJBIS.2020.105833">DOI</a></li>
+            <li class="pub" data-kind="short"><span class="title">My Body, My Avatar: How People Perceive Their Avatars in Social Virtual Reality</span>
+              <span class="authors">Freeman, G., <b>Zamanifard, S.</b>, Maloney, D., &amp; Adkins, A.</span>
+              <span class="venue"><i>CHI EA ’20</i>, Article LBW250, 1–8.</span><span class="kind">Late-breaking work</span>
+              <a class="doi" href="https://doi.org/10.1145/3334480.3382923">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2019</h3>
+          <ol>
+            <li class="pub" data-kind="short"><span class="title">“The Togetherness that We Crave”: Experiencing Social VR in Long Distance Relationships</span>
+              <span class="authors"><b>Zamanifard, S.</b>, &amp; Freeman, G.</span>
+              <span class="venue"><i>CSCW ’19 Companion</i>, 438–442.</span><span class="kind">Poster</span>
+              <a class="doi" href="https://doi.org/10.1145/3311957.3359453">DOI</a></li>
+          </ol>
+        </div>
+
+        <div class="pub-year">
+          <h3>2015</h3>
+          <ol>
+            <li class="pub" data-kind="paper"><span class="title">An Incremental Approach to Manage Variability in Software Product Line Requirements</span>
+              <span class="authors"><b>Zamanifard, S.</b>, Khosravi, R., &amp; Sabouri, H.</span>
+              <span class="venue"><i>International Journal of Computer and Electrical Engineering</i>, 7(1), 47–69.</span><span class="kind">Journal</span>
+              <a class="doi" href="https://doi.org/10.17706/IJCEE.2015.V7.872">DOI</a></li>
+          </ol>
+        </div>
+    </details>
+  </section>
+
+  <section class="section" id="teaching" aria-labelledby="teaching-h">
+    <div class="section-head">
+      <h2 id="teaching-h">Teaching and mentoring</h2>
+      <p>Twelve courses at Clemson, from intro programming to graduate HCC, and research mentoring at UGA.</p>
+    </div>
+    <div class="teach">
+      <div>
+        <div class="teach-item">
+          <h3><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-board"/></svg></span>Human–Computer Interaction</h3>
+          <p class="meta">CPSC 4140/6140, four offerings</p>
+          <p class="sum">Taught Figma and coached prototyping and usability evaluation.</p>
+        </div>
+        <div class="teach-item">
+          <h3><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-chart"/></svg></span>Applied Data Science</h3>
+          <p class="meta">CPSC 4300/6300, lab instructor, three offerings</p>
+          <p class="sum">Taught Python labs and designed and ran quizzes.</p>
+        </div>
+      </div>
+      <div>
+        <div class="teach-item">
+          <h3><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg></span>Mentoring</h3>
+          <p class="sum">Mentor undergraduate and graduate researchers at UGA, including students in the Vertically Integrated Projects for Research (VIPR) program.</p>
+        </div>
+        <div class="teach-item">
+          <h3><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>Writing pedagogy</h3>
+          <p class="sum">Graduate Writing Across the Curriculum Fellow, 2020 to 2022.</p>
+        </div>
+      </div>
+    </div>
+    <p class="teach-also"><strong>Also supported:</strong> Java programming, discrete structures, software development, computer organization, operating systems, databases, usable privacy and security, system administration, game design, and a graduate seminar on online relationships.</p>
+  </section>
+
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="section-head">
+      <h2 id="exp-h">Experience</h2>
+    </div>
+    <ol class="timeline">
+      <li>
+        <p class="when">2026 to present</p>
+        <div>
+          <h3>Postdoctoral Research Associate</h3>
+          <p class="org">AI4STEM Education Center, University of Georgia</p>
+          <p class="sum">Lead design and evaluation of AI-supported STEM learning environments (GENIUS, EngageAgent) and mentor student researchers.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2019 to 2026</p>
+        <div>
+          <h3>Ph.D. in Human-Centered Computing</h3>
+          <p class="org">Clemson University. Advisor: Andrew Robb</p>
+          <p class="sum">Dissertation: <i>Personalizing Education with Large Language Models: Learner Characteristics, Style Inference, and Adaptive Engagement.</i></p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2006 to 2018</p>
+        <div>
+          <h3>Product Owner and Systems Analyst</h3>
+          <p class="org">Appson, Hasin, Soroush High Tech, Fanap Insurance System</p>
+          <p class="sum">Twelve years leading UX, requirements, and product teams, including the Myket app store and Iran's early IPTV services.</p>
+        </div>
+      </li>
+      <li>
+        <p class="when">2004 to 2014</p>
+        <div>
+          <h3>B.S. and M.S. in Computer Engineering, Software</h3>
+          <p class="org">Islamic Azad University, Tehran</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="section" id="honors" aria-labelledby="honors-h">
+    <div class="section-head">
+      <h2 id="honors-h">Honors and service</h2>
+    </div>
+    <ul class="honors">
+      <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span><div><p class="yr">2020 to 2022</p><h3>Meta Research PhD Fellowship</h3><p>Selected from 1,876 applicants. <a href="https://research.facebook.com/fellows/zamanifard-samaneh/">Fellowship profile</a></p></div></li>
+      <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span><div><p class="yr">2026</p><h3>Best Paper Award Finalist</h3><p>Decision Sciences Institute Annual Conference</p></div></li>
+      <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span><div><p class="yr">2026</p><h3>Outstanding Review Recognition</h3><p>ACM UIST</p></div></li>
+      <li><span class="tile"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span><div><p class="yr">2023 to 2026</p><h3>Peer reviewer</h3><p>ACM CHI, ACM UIST, IEEE VR, ACM TOCH, Computers in Human Behavior</p></div></li>
     </ul>
   </section>
 
+  <section class="section contact" id="contact" aria-labelledby="contact-h">
+    <div class="section-head">
+      <h2 id="contact-h">Get in touch</h2>
+      <p>I'm happy to talk about faculty openings, collaborations, and student projects.</p>
+    </div>
+    <ul class="actions">
+      <li><a class="btn btn-primary" href="mailto:samaneh.zamanifard@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>samaneh.zamanifard@gmail.com</a></li>
+      <li><a class="btn" href="cv.pdf"><svg class="icon" aria-hidden="true"><use href="#i-download"/></svg>Download CV</a></li>
+    </ul>
+  </section>
 </main>
 
-<footer>© 2026 Samaneh Zamanifard</footer>
+<footer><div class="wrap">© 2026 Samaneh Zamanifard</div></footer>
 
+<script>
+  // Navigation: mark the section in view
+  (function () {
+    var links = Array.prototype.slice.call(document.querySelectorAll('.nav ul a'));
+    var sections = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+    var current = null;
+    function onScroll() {
+      var y = window.innerHeight * 0.4, best = -1;
+      sections.forEach(function (s, i) { if (s && s.getBoundingClientRect().top <= y) best = i; });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) best = sections.length - 1;
+      if (best === current) return;
+      current = best;
+      links.forEach(function (a, i) {
+        if (i === best) {
+          a.setAttribute('aria-current', 'true');
+          var bar = a.closest('.wrap');
+          if (bar.scrollWidth > bar.clientWidth) bar.scrollTo({ left: a.offsetLeft - bar.clientWidth / 2 + a.offsetWidth / 2 });
+        } else a.removeAttribute('aria-current');
+      });
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  // Live gaze heatmap on the portrait. The pointer stands in for gaze; fixations are
+  // detected with a dispersion threshold (I-DT), as in eye-tracking analysis.
+  (function () {
+    var frame = document.querySelector('.photo');
+    var canvas = frame.querySelector('canvas'), ctx = canvas.getContext('2d');
+    var G = 96, heat = new Float32Array(G * G);
+    var off = document.createElement('canvas'); off.width = off.height = G;
+    var octx = off.getContext('2d'), img = octx.createImageData(G, G);
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var samples = [], pointer = null, last = 0, running = false;
+    var DISPERSION = 36, MIN_DUR = 100;
+    var stops = [[0, 11, 110, 121, 0], [0.2, 11, 110, 121, 120], [0.45, 40, 180, 170, 165],
+                 [0.65, 150, 200, 80, 190], [0.82, 240, 190, 50, 210], [1, 217, 80, 26, 225]];
+    function ramp(t) {
+      for (var i = 1; i < stops.length; i++) if (t <= stops[i][0]) {
+        var a = stops[i - 1], b = stops[i], k = (t - a[0]) / (b[0] - a[0]);
+        return [a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k, a[3] + (b[3] - a[3]) * k, a[4] + (b[4] - a[4]) * k];
+      }
+      return stops[stops.length - 1].slice(1);
+    }
+    function size() {
+      var r = canvas.getBoundingClientRect(), d = window.devicePixelRatio || 1;
+      canvas.width = Math.round(r.width * d); canvas.height = Math.round(r.height * d); draw();
+    }
+    function deposit(px, py, amount) {
+      var r = canvas.getBoundingClientRect(), gx = px / r.width * G, gy = py / r.height * G, s = 5;
+      for (var y = Math.max(0, gy - 3 * s | 0); y < Math.min(G, gy + 3 * s); y++)
+        for (var x = Math.max(0, gx - 3 * s | 0); x < Math.min(G, gx + 3 * s); x++) {
+          var dx = x - gx, dy = y - gy;
+          heat[y * G + x] = Math.min(1, heat[y * G + x] + amount * Math.exp(-(dx * dx + dy * dy) / (2 * s * s)));
+        }
+    }
+    function draw() {
+      var d = img.data;
+      for (var i = 0; i < heat.length; i++) { var c = ramp(heat[i]); d[i*4] = c[0]; d[i*4+1] = c[1]; d[i*4+2] = c[2]; d[i*4+3] = c[3]; }
+      octx.putImageData(img, 0, 0);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+      ctx.drawImage(off, 0, 0, canvas.width, canvas.height);
+    }
+    function tick(now) {
+      var dt = Math.min(64, now - (last || now)); last = now;
+      if (pointer) {
+        samples.push({ t: now, x: pointer.x, y: pointer.y });
+        while (samples.length && now - samples[0].t > MIN_DUR) samples.shift();
+        var x0 = Infinity, x1 = -Infinity, y0 = Infinity, y1 = -Infinity, sx = 0, sy = 0;
+        samples.forEach(function (p) { x0 = Math.min(x0, p.x); x1 = Math.max(x1, p.x); y0 = Math.min(y0, p.y); y1 = Math.max(y1, p.y); sx += p.x; sy += p.y; });
+        if ((x1 - x0) + (y1 - y0) <= DISPERSION) deposit(sx / samples.length, sy / samples.length, dt * 0.003);
+      }
+      if (!reduce) for (var i = 0; i < heat.length; i++) heat[i] *= 0.9985;
+      draw();
+      var warm = false;
+      for (var j = 0; j < heat.length && !warm; j += 7) warm = heat[j] > 0.004;
+      if (pointer || (warm && !reduce)) requestAnimationFrame(tick); else running = false;
+    }
+    function move(e) {
+      var r = canvas.getBoundingClientRect();
+      pointer = { x: e.clientX - r.left, y: e.clientY - r.top };
+      if (!running) { running = true; last = 0; requestAnimationFrame(tick); }
+    }
+    function leave() { pointer = null; samples = []; }
+    frame.addEventListener('pointermove', move);
+    frame.addEventListener('pointerdown', move);
+    frame.addEventListener('pointerleave', leave);
+    frame.addEventListener('pointercancel', leave);
+    frame.addEventListener('pointerup', function (e) { if (e.pointerType !== 'mouse') leave(); });
+    window.addEventListener('resize', size);
+    size();
+  })();
+
+  // Give each DOI/arXiv link a unique accessible name that starts with its visible text
+  document.querySelectorAll('.pub .doi').forEach(function (a) {
+    a.setAttribute('aria-label', a.textContent.trim() + ': ' + a.closest('.pub').querySelector('.title').textContent);
+  });
+</script>
 </body>
 </html>
